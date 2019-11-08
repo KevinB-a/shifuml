@@ -3,11 +3,11 @@ import random
 """creation of departure variables"""
 continue_game= True
 print("Welcome on shifumi game")
-while continue_game == True:
+while continue_game == True: # create loop for reload the game
     score_user=0
     score_computer=0
     print(name_choice())
-    while score_user !=3 and score_computer !=3:
+    while score_user !=3 and score_computer !=3: #loop stop when score_user or score_computer is 3
         stone="pierre"
         paper="papier"
         scissor="ciseaux"
