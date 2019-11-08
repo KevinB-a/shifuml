@@ -10,12 +10,12 @@ def user_choice():
     """this function allows the player to choose his movement,
     if the player enters nothing or something else than pierre papier ciseaux he starts again  """
     answer=""
-    while answer not in ["pierre","papier","ciseaux"]:
+    while answer not in ["pierre","papier","ciseaux"]: # the loop turn until answer is in list
         answer=input("Choose pierre , papier or ciseaux").lower()
     return answer
 
 def computer_choice():
     """this function makes it possible to randomly select values """
     list1=["pierre","papier","ciseaux"]
-    computer_answer=random.choice(list1)
+    computer_answer=random.choice(list1) # choose random element in list1
     return computer_answer
