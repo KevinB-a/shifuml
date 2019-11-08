@@ -11,7 +11,7 @@ def user_choice():
     if the player enters nothing or something else than pierre papier ciseaux he starts again  """
     answer=""
     while answer not in ["pierre","papier","ciseaux"]: # the loop turn until answer is in list
-    answer=input("Choose pierre , papier or ciseaux").lower() #if user enter a letter in uppercase .lower permit
+        answer=input("Choose pierre , papier or ciseaux").lower() #if user enter a letter in uppercase .lower permit
     return answer                                             #to put value in tiny
 
 def computer_choice():
