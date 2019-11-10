@@ -1,12 +1,17 @@
-from functions import *
 import random
+
+from functions import *
+
 """creation of departure variables"""
 continue_game= True
 print("Welcome on shifumi game")
+
 while continue_game == True: # create loop for reload the game
     score_user=0 # initalize both score at 0
     score_computer=0
+
     print(name_choice())
+
     while score_user !=3 and score_computer !=3: #loop stop when score_user or score_computer is 3
         stone="pierre"
         paper="papier"
@@ -29,7 +34,6 @@ while continue_game == True: # create loop for reload the game
             print("you win your score is", score_user ) #display user score
             print("computer's score is",score_computer) #display computer's score
             print("//////////////////////////////////////////////////")
-
         if computer_answer == paper and user_answer == scissor: #scissor win against paper
             score_user+=1
             print("//////////////////////////////////////////////////")
@@ -41,24 +45,21 @@ while continue_game == True: # create loop for reload the game
         if user_answer == stone and computer_answer == paper:
             score_computer+=1
             print("//////////////////////////////////////////////////")
-            print("you win your score is", score_user ) #display user score
+            print("you loose your score is", score_user ) #display user score
             print("computer's score is",score_computer) #display computer's score
             print("//////////////////////////////////////////////////")
-
         if user_answer == paper and computer_answer == scissor:
             score_computer+=1
             print("//////////////////////////////////////////////////")
             print("you win your score is", score_user ) #display user score
             print("computer's score is",score_computer) #display computer's score
             print("//////////////////////////////////////////////////")
-
         if computer_answer == stone and user_answer== scissor:
             score_computer+=1
             print("//////////////////////////////////////////////////")
             print("you win your score is", score_user ) #display user score
             print("computer's score is",score_computer) #display computer's score
             print("//////////////////////////////////////////////////")
-
         """ draw case"""
         if user_answer == computer_answer:
             print("//////////////////////////////////////////////////")

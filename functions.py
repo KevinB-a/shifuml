@@ -1,10 +1,11 @@
 import random
+
 def name_choice():
     """this function allow the player to choose enter a name or pseudo """
-    user=""
-    while user =="": #if value of user is empty the loop continue
+    username=""
+    while username =="": #if value of user is empty the loop continue
         user=input("please enter your name or pseudo")
-    return user
+        return username
 
 def user_choice():
     """this function allows the player to choose his movement,
